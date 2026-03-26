@@ -3,7 +3,7 @@ import { SQSClient, SendMessageCommand } from "@aws-sdk/client-sqs";
 const client = new SQSClient({
     region: "us-east-1"
 });
-//add comment no comment to add
+//add comment no comment to add ***
 export const handler = async (event) => {
     try {
         const body = event.body ? JSON.parse(event.body) : {};
